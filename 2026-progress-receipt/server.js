@@ -76,9 +76,9 @@ function transcodeFrames(sources, output) {
   const args = [
     "-y", ...inputArgs,
     "-f", "lavfi", "-t", "10", "-i", `aevalsrc=${score}:s=44100`,
-    "-filter_complex", `${filters.join(";")};${joined};[8:a]afade=t=in:st=0:d=0.35,afade=t=out:st=9.15:d=0.85,volume=0.9[music]`,
-    "-map", "[video]", "-map", "[music]", "-shortest",
-    "-c:v", "libx264", "-preset", "veryfast", "-profile:v", "baseline", "-level", "3.1",
+    "-filter_complex", `${filters.join(";")};${joined};[video]fps=30[vout];[8:a]afade=t=in:st=0:d=0.35,afade=t=out:st=9.15:d=0.85,volume=0.9[music]`,
+    "-map", "[vout]", "-map", "[music]", "-shortest",
+    "-c:v", "libx264", "-preset", "veryfast", "-profile:v", "baseline", "-level", "4.0",
     "-pix_fmt", "yuv420p", "-movflags", "+faststart",
     "-c:a", "aac", "-b:a", "128k", output,
   ];
