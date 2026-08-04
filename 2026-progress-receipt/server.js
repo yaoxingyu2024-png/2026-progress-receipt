@@ -65,11 +65,11 @@ app.listen(port, () => console.log(`2026 Progress Receipt listening on ${port}`)
 
 function transcode(source, output) {
   // The score is original: a soft C-major ambient chord with a slow pulse.
-  const score = "0.032*(sin(2*PI*261.63*t)+0.72*sin(2*PI*329.63*t)+0.55*sin(2*PI*392*t)+0.24*sin(2*PI*523.25*t))*(0.72+0.28*sin(2*PI*0.18*t))";
+  const score = "0.10*(sin(2*PI*261.63*t)+0.72*sin(2*PI*329.63*t)+0.55*sin(2*PI*392*t)+0.24*sin(2*PI*523.25*t))*(0.72+0.28*sin(2*PI*0.18*t))";
   const args = [
     "-y", "-i", source,
     "-f", "lavfi", "-t", "10", "-i", `aevalsrc=${score}:s=44100`,
-    "-filter_complex", "[1:a]afade=t=in:st=0:d=0.35,afade=t=out:st=9.15:d=0.85,volume=0.72[music]",
+    "-filter_complex", "[1:a]afade=t=in:st=0:d=0.35,afade=t=out:st=9.15:d=0.85,volume=0.9[music]",
     "-map", "0:v:0", "-map", "[music]", "-shortest",
     "-c:v", "libx264", "-preset", "veryfast", "-profile:v", "baseline", "-level", "3.1",
     "-pix_fmt", "yuv420p", "-movflags", "+faststart",
