@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#11110f" />
+    <meta
+      name="description"
+      content="2026已经过去多少？选5张照片，生成你的年度进度小票。无需登录，照片只在本机处理。"
+    />
+    <meta property="og:title" content="2026进度小票｜今年已经花掉多少？" />
+    <meta
+      property="og:description"
+      content="选5张照片，结算你的2026。无需登录，照片只在本机处理。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>2026进度小票｜今年已经花掉多少？</title>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="2026进度小票首页">
+        <span class="brand-mark" aria-hidden="true">%</span>
+        <span>2026进度小票</span>
+      </a>
+      <span class="header-note">视频仅用于即时生成</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="referral-note" id="referral-note" hidden>有人把自己的2026发给了你 · 轮到你了</p>
+          <p class="eyebrow">YEAR PROGRESS RECEIPT · 2026</p>
+          <h1>
+            今年已经<br />
+            花掉了 <span class="accent" id="hero-percent">--.-%</span>
+          </h1>
+          <p class="hero-lead">
+            用5张照片，结算你已经度过的日子。<br />不登录，生成后自动删除，10秒完成。
+          </p>
+          <button class="button button-primary hero-cta" id="start-button" type="button">
+            生成我的进度小票
+            <span aria-hidden="true">↘</span>
+          </button>
+          <button class="demo-button" id="demo-button" type="button">先看10秒成品</button>
+          <p class="microcopy"><span class="pulse-dot"></span> 约30秒完成</p>
+        </div>
+
+        <div class="hero-visual" aria-label="进度小票示意图">
+          <div class="ticket ticket-preview">
+            <div class="ticket-teeth ticket-teeth-top"></div>
+            <div class="ticket-inner">
+              <div class="ticket-meta">
+                <span>NO. 2026</span>
+                <span id="hero-date">--/--</span>
+              </div>
+              <p class="ticket-kicker">PROGRESS RECEIPT</p>
+              <div class="ticket-number" id="ticket-percent">--.-%</div>
+              <div class="barcode" aria-hidden="true"></div>
+              <dl class="ticket-stats">
+                <div><dt>已使用</dt><dd id="hero-days-used">--- 天</dd></div>
+                <div><dt>还剩下</dt><dd id="hero-days-left">--- 天</dd></div>
+                <div><dt>留下的瞬间</dt><dd>5 张</dd></div>
+              </dl>
+              <div class="mini-memories" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p class="ticket-question">剩下的日子，你准备怎么花？</p>
+            </div>
+            <div class="ticket-teeth ticket-teeth-bottom"></div>
+          </div>
+          <span class="sticker sticker-one">还来得及</span>
+          <span class="sticker sticker-two">2026</span>
+        </div>
+      </section>
+
+      <section class="builder section-shell" id="builder" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">STEP 01 · PICK FIVE</p>
+            <h2>从今年的相册里，选5个瞬间</h2>
+          </div>
+          <span class="step-count">1 / 2</span>
+        </div>
+        <p class="section-intro">不用认真筛选。第一眼想到的，通常就是答案。</p>
+
+        <div class="upload-grid" id="upload-grid">
+          <label class="upload-card" data-slot="0">
+            <input type="file" accept="image/*" data-file-input="0" />
+            <span class="upload-number">01</span>
+            <span class="upload-copy">
+              <strong>最舍不得删</strong>
+              <small>不一定完美，但很像今年</small>
+            </span>
+            <span class="upload-action">选择照片</span>
+            <img alt="最舍不得删的一张照片预览" />
+          </label>
+          <label class="upload-card" data-slot="1">
+            <input type="file" accept="image/*" data-file-input="1" />
+            <span class="upload-number">02</span>
+            <span class="upload-copy">
+              <strong>最像电影</strong>
+              <small>那一刻值得有片尾字幕</small>
+            </span>
+            <span class="upload-action">选择照片</span>
+            <img alt="最像电影的一张照片预览" />
+          </label>
+          <label class="upload-card" data-slot="2">
+            <input type="file" accept="image/*" data-file-input="2" />
+            <span class="upload-number">03</span>
+            <span class="upload-copy">
+              <strong>最想重来</strong>
+              <small>如果再来一次，你还会去</small>
+            </span>
+            <span class="upload-action">选择照片</span>
+            <img alt="最想重来的一张照片预览" />
+          </label>
+          <label class="upload-card" data-slot="3">
+            <input type="file" accept="image/*" data-file-input="3" />
+            <span class="upload-number">04</span>
+            <span class="upload-copy">
+              <strong>最没想到</strong>
+              <small>计划之外，记忆之内</small>
+            </span>
+            <span class="upload-action">选择照片</span>
+            <img alt="最没想到的一张照片预览" />
+          </label>
+          <label class="upload-card" data-slot="4">
+            <input type="file" accept="image/*" data-file-input="4" />
+            <span class="upload-number">05</span>
+            <span class="upload-copy">
+              <strong>最期待发生</strong>
+              <small>用一张照片预告接下来的日子</small>
+            </span>
+            <span class="upload-action">选择照片</span>
+            <img alt="最期待发生的一张照片预览" />
+          </label>
+        </div>
+
+        <div class="builder-footer">
+          <p id="upload-status" aria-live="polite">还差5张照片</p>
+          <button class="button button-primary" id="make-button" type="button" disabled>
+            生成我的小票
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="result section-shell" id="result" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">STEP 02 · KEEP IT</p>
+            <h2>这是你花掉的2026</h2>
+          </div>
+          <span class="step-count">2 / 2</span>
+        </div>
+
+        <div class="result-layout">
+          <div class="canvas-frame">
+            <canvas id="receipt-canvas" width="720" height="1280" aria-label="你的2026进度小票"></canvas>
+            <span class="canvas-badge">10 SEC LOOP</span>
+          </div>
+
+          <div class="result-actions">
+            <p class="result-prompt">先保存，再发出去。让朋友也结算一下自己的2026。</p>
+            <button class="button button-share" id="share-button" type="button">
+              分享我的进度小票
+              <span aria-hidden="true">↗</span>
+            </button>
+            <button class="button button-secondary" id="video-button" type="button">
+              生成10秒视频
+              <span aria-hidden="true">▶</span>
+            </button>
+            <button class="text-button" id="image-button" type="button">保存高清图片</button>
+            <button class="text-button muted" id="restart-button" type="button">重新选择照片</button>
+            <p class="export-status" id="export-status" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>2026 PROGRESS RECEIPT</span>
+      <span>视频即时生成后自动删除</span>
+    </footer>
+
+    <script src="./app.js?v=10.2" defer></script>
+  </body>
+</html>

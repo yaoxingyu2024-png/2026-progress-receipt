@@ -1,0 +1,17 @@
+{
+  "name": "2026进度小票",
+  "short_name": "进度小票",
+  "description": "选5张照片，生成你的2026年度进度小票。",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#11110f",
+  "theme_color": "#11110f",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

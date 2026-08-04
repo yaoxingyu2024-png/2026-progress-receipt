@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2" fill="#FFFFFF" opacity="0.08"/>
+    </pattern>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1920" fill="#0D0E0E"/>
+  <rect width="1080" height="1920" fill="url(#dots)"/>
+
+  <g filter="url(#shadow)">
+    <path d="M104 172 L126 152 L148 172 L170 152 L192 172 L214 152 L236 172 L258 152 L280 172 L302 152 L324 172 L346 152 L368 172 L390 152 L412 172 L434 152 L456 172 L478 152 L500 172 L522 152 L544 172 L566 152 L588 172 L610 152 L632 172 L654 152 L676 172 L698 152 L720 172 L742 152 L764 172 L786 152 L808 172 L830 152 L852 172 L874 152 L896 172 L918 152 L940 172 L976 152 L976 1574 L954 1594 L932 1574 L910 1594 L888 1574 L866 1594 L844 1574 L822 1594 L800 1574 L778 1594 L756 1574 L734 1594 L712 1574 L690 1594 L668 1574 L646 1594 L624 1574 L602 1594 L580 1574 L558 1594 L536 1574 L514 1594 L492 1574 L470 1594 L448 1574 L426 1594 L404 1574 L382 1594 L360 1574 L338 1594 L316 1574 L294 1594 L272 1574 L250 1594 L228 1574 L206 1594 L184 1574 L162 1594 L140 1574 L104 1594 Z" fill="#F4F0E6"/>
+  </g>
+
+  <text x="156" y="262" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="42" font-weight="800" letter-spacing="2">2026 PROGRESS RECEIPT</text>
+  <text x="156" y="384" fill="#11110F" font-family="PingFang SC, Hiragino Sans GB, sans-serif" font-size="68" font-weight="800">2026 已使用</text>
+  <text x="148" y="686" fill="#FF5138" font-family="Arial Black, PingFang SC, sans-serif" font-size="264" font-weight="900" letter-spacing="-16">58.9%</text>
+
+  <g fill="#11110F">
+    <rect x="158" y="770" width="12" height="132"/><rect x="180" y="770" width="25" height="132"/>
+    <rect x="216" y="770" width="9" height="132"/><rect x="236" y="770" width="18" height="132"/>
+    <rect x="266" y="770" width="31" height="132"/><rect x="308" y="770" width="11" height="132"/>
+    <rect x="330" y="770" width="21" height="132"/><rect x="362" y="770" width="8" height="132"/>
+    <rect x="381" y="770" width="28" height="132"/><rect x="420" y="770" width="14" height="132"/>
+    <rect x="447" y="770" width="9" height="132"/><rect x="467" y="770" width="34" height="132"/>
+    <rect x="514" y="770" width="17" height="132"/><rect x="543" y="770" width="8" height="132"/>
+    <rect x="564" y="770" width="25" height="132"/><rect x="600" y="770" width="14" height="132"/>
+    <rect x="628" y="770" width="33" height="132"/><rect x="673" y="770" width="9" height="132"/>
+    <rect x="694" y="770" width="20" height="132"/><rect x="726" y="770" width="12" height="132"/>
+    <rect x="750" y="770" width="29" height="132"/><rect x="791" y="770" width="8" height="132"/>
+    <rect x="810" y="770" width="23" height="132"/><rect x="844" y="770" width="14" height="132"/>
+    <rect x="870" y="770" width="32" height="132"/>
+  </g>
+
+  <g>
+    <rect x="156" y="1002" width="141" height="198" rx="18" fill="#FF6047"/>
+    <rect x="312" y="1002" width="141" height="198" rx="18" fill="#5B7CFA"/>
+    <rect x="469" y="1002" width="141" height="198" rx="18" fill="#DFFF4F"/>
+    <rect x="626" y="1002" width="141" height="198" rx="18" fill="#5AC7A9"/>
+    <rect x="783" y="1002" width="141" height="198" rx="18" fill="#A96BC3"/>
+    <text x="226" y="1270" text-anchor="middle" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="900">01</text>
+    <text x="382" y="1270" text-anchor="middle" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="900">02</text>
+    <text x="539" y="1270" text-anchor="middle" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="900">03</text>
+    <text x="696" y="1270" text-anchor="middle" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="900">04</text>
+    <text x="853" y="1270" text-anchor="middle" fill="#11110F" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="900">05</text>
+  </g>
+
+  <line x1="156" y1="1350" x2="924" y2="1350" stroke="#11110F" stroke-width="4" stroke-dasharray="14 13" opacity="0.7"/>
+  <text x="540" y="1456" text-anchor="middle" fill="#11110F" font-family="PingFang SC, Hiragino Sans GB, sans-serif" font-size="64" font-weight="900">选 5 张照片结算今年</text>
+
+  <rect x="236" y="1680" width="608" height="108" rx="54" fill="#DFFF4F"/>
+  <text x="540" y="1752" text-anchor="middle" fill="#11110F" font-family="PingFang SC, Hiragino Sans GB, sans-serif" font-size="44" font-weight="900">10 秒生成 · 使用同款</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-opacity=".35"/>
+    </filter>
+    <pattern id="grain" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="5" r="1" fill="#fff" opacity=".08"/>
+      <circle cx="14" cy="15" r=".8" fill="#fff" opacity=".05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#11110f"/>
+  <rect width="1200" height="630" fill="url(#grain)"/>
+  <circle cx="117" cy="92" r="27" fill="#dfff4f"/>
+  <text x="117" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" font-weight="900" fill="#11110f">%</text>
+  <text x="160" y="102" font-family="Arial,'PingFang SC',sans-serif" font-size="24" font-weight="800" fill="#f4f0e6">2026进度小票</text>
+  <text x="82" y="245" font-family="Arial,'PingFang SC',sans-serif" font-size="66" font-weight="900" fill="#f4f0e6">今年已经花掉</text>
+  <text x="74" y="386" font-family="Arial,sans-serif" font-size="154" font-weight="900" fill="#ff5b3d">58.9%</text>
+  <text x="84" y="455" font-family="Arial,'PingFang SC',sans-serif" font-size="28" font-weight="600" fill="#bdb9ae">选5张照片，结算你已经度过的日子</text>
+  <g transform="translate(780 50) rotate(3 170 265)" filter="url(#shadow)">
+    <path d="M0 12 12 0l12 12L36 0l12 12L60 0l12 12L84 0l12 12L108 0l12 12L132 0l12 12L156 0l12 12L180 0l12 12L204 0l12 12L228 0l12 12L252 0l12 12L276 0l12 12L300 0l12 12L324 0l12 12L348 0v510l-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12-12 12-12-12V12Z" fill="#f4f0e6"/>
+    <text x="28" y="64" font-family="monospace" font-size="16" font-weight="800" fill="#11110f">PROGRESS RECEIPT</text>
+    <text x="28" y="166" font-family="Arial,sans-serif" font-size="92" font-weight="900" fill="#11110f">58.9%</text>
+    <g fill="#11110f">
+      <rect x="28" y="208" width="5" height="58"/><rect x="38" y="208" width="10" height="58"/><rect x="55" y="208" width="3" height="58"/><rect x="64" y="208" width="8" height="58"/><rect x="78" y="208" width="4" height="58"/><rect x="90" y="208" width="13" height="58"/><rect x="110" y="208" width="4" height="58"/><rect x="122" y="208" width="8" height="58"/><rect x="138" y="208" width="3" height="58"/><rect x="148" y="208" width="12" height="58"/><rect x="168" y="208" width="5" height="58"/><rect x="181" y="208" width="9" height="58"/><rect x="198" y="208" width="3" height="58"/><rect x="208" y="208" width="12" height="58"/><rect x="228" y="208" width="6" height="58"/><rect x="242" y="208" width="3" height="58"/><rect x="252" y="208" width="10" height="58"/><rect x="270" y="208" width="5" height="58"/><rect x="284" y="208" width="12" height="58"/><rect x="304" y="208" width="4" height="58"/>
+    </g>
+    <rect x="28" y="300" width="90" height="110" rx="8" fill="#ff5b3d"/>
+    <rect x="127" y="300" width="90" height="110" rx="8" fill="#5c7cfa"/>
+    <rect x="226" y="300" width="90" height="110" rx="8" fill="#dfff4f"/>
+    <text x="28" y="458" font-family="monospace" font-size="15" font-weight="800" fill="#11110f">215 DAYS USED / 150 LEFT</text>
+    <text x="174" y="492" text-anchor="middle" font-family="Arial,'PingFang SC',sans-serif" font-size="17" font-weight="900" fill="#11110f">剩下的日子，你准备怎么花？</text>
+  </g>
+</svg>
