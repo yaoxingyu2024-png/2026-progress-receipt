@@ -70,7 +70,7 @@ function transcodeFrames(sources, output) {
   const durations = [0.8, 1.1, 1.1, 1.1, 1.1, 1.1, 2.5, 1.2];
   const inputArgs = sources.flatMap((source, index) => ["-loop", "1", "-t", String(durations[index]), "-i", source]);
   const filters = sources.map((_, index) =>
-    `[${index}:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[v${index}]`,
+    `[${index}:v]scale=720:1280:force_original_aspect_ratio=increase,crop=720:1280,setsar=1[v${index}]`,
   );
   const joined = `${sources.map((_, index) => `[v${index}]`).join("")}concat=n=8:v=1:a=0[video]`;
   const args = [
@@ -78,7 +78,7 @@ function transcodeFrames(sources, output) {
     "-f", "lavfi", "-t", "10", "-i", `aevalsrc=${score}:s=44100`,
     "-filter_complex", `${filters.join(";")};${joined};[video]fps=30[vout];[8:a]afade=t=in:st=0:d=0.35,afade=t=out:st=9.15:d=0.85,volume=0.9[music]`,
     "-map", "[vout]", "-map", "[music]", "-shortest",
-    "-c:v", "libx264", "-preset", "veryfast", "-profile:v", "baseline", "-level", "4.0",
+    "-c:v", "libx264", "-threads", "2", "-preset", "ultrafast", "-crf", "28", "-profile:v", "baseline", "-level", "3.1",
     "-pix_fmt", "yuv420p", "-movflags", "+faststart",
     "-c:a", "aac", "-b:a", "128k", output,
   ];
